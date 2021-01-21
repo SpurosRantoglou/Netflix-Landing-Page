@@ -390,7 +390,7 @@ p {
 
 @media (max-width: 960px) {
   .showcase {
-    height: 85vh;
+    height: 90vh;
   }
 
   .hide-sm {
@@ -476,9 +476,30 @@ p {
     width: 80%;
     margin: auto;
   }
+
+  .table-container {
+    max-width: 100%;
+    padding: 0 0rem;
+  }
 }
 @media (max-width: 450px) {
   .table tbody tr td {
     font-size: 0.7rem;
+  }
+
+  .btn-xl {
+    font-size: 0.8rem;
+    padding: 1rem 1.4rem;
+  }
+
+  .showcase-content h1 {
+    font-size: 2rem;
+    margin: 0 0 1rem;
+    line-height: 1;
+  }
+
+  .showcase-content p {
+    font-size: 0.8rem;
+    margin: 0 0 2rem;
   }
 }
