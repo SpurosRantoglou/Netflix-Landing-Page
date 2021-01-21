@@ -84,7 +84,7 @@ p {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-top: 10rem;
+  margin-top: 8rem;
   z-index: 2;
 }
 
@@ -482,7 +482,7 @@ p {
     padding: 0 0rem;
   }
 }
-@media (max-width: 450px) {
+@media (max-width: 480px) {
   .table tbody tr td {
     font-size: 0.7rem;
   }
@@ -493,14 +493,19 @@ p {
   }
 
   .showcase-content h1 {
-    font-size: 2rem;
-    margin: 0 0 1rem;
+    font-size: 2.4rem;
+    margin: 1rem 1rem;
     line-height: 1;
   }
 
   .showcase-content p {
-    font-size: 0.8rem;
-    margin: 0 0 2rem;
+    font-size: 1.4rem;
+    margin: 1rem 2rem;
+    line-height: 1;
+  }
+  .tabs .container > div {
+    /** For each div inside the class tab container **/
+    padding: 0.4rem 0;
   }
 
   .table thead th {
