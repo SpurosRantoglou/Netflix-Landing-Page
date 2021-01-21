@@ -502,4 +502,22 @@ p {
     font-size: 0.8rem;
     margin: 0 0 2rem;
   }
+
+  .table thead th {
+    padding: 0.6rem;
+  }
+
+  .table tbody tr td {
+    padding: 0.6rem 1.1rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .table thead th {
+    padding: 0.5rem;
+  }
+
+  .table tbody tr td {
+    padding: 0.5rem 0.8rem;
+  }
 }
