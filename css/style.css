@@ -35,6 +35,7 @@ p {
   margin: 0.5rem 0;
 }
 
+/** Main Page **/
 .showcase {
   width: 100%;
   height: 95vh;
@@ -104,16 +105,14 @@ p {
   margin: 0 0 4rem;
 }
 
-/** Hide tab content initially **/
 #tab-1-content,
 #tab-2-content,
 #tab-3-content {
-  display: none;
+  display: none; /** Hide tab content initially **/
 }
 
-/** Show first tab content initially **/
 .show {
-  display: block !important;
+  display: block !important; /** Show first tab content initially **/
 }
 
 /** Tabs **/
@@ -192,6 +191,19 @@ p {
   align-items: center;
 }
 
+#tab-2-content h1 {
+  font-weight: 700;
+  font-size: 3.2rem;
+  margin: 0 0 1.8rem;
+}
+#tab-2-content h2 {
+  font-weight: 400;
+  font-size: 1.25rem;
+  margin: 0 0 2rem;
+}
+
+/** Video and Photo Playback **/
+
 .our-story-card-animation {
   width: 100%;
   height: 100%;
@@ -200,6 +212,16 @@ p {
   padding: 16% 10%;
   overflow: hidden;
   margin-left: 0.5rem;
+}
+
+.our-story-card-animation-2 {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  position: absolute;
+  padding: 20% 10%;
+  overflow: hidden;
+  transform: translate(0, -15%);
 }
 
 .our-story-card-img-container {
@@ -215,20 +237,11 @@ p {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+
 .our-story-card-video {
   width: 100%;
   height: 100%;
   z-index: 2;
-}
-#tab-2-content h1 {
-  font-weight: 700;
-  font-size: 3.2rem;
-  margin: 0 0 1.8rem;
-}
-#tab-2-content h2 {
-  font-weight: 400;
-  font-size: 1.25rem;
-  margin: 0 0 2rem;
 }
 
 #tab-1-content img {
@@ -236,6 +249,12 @@ p {
   z-index: 10;
   width: 100%;
 }
+#tab-2-content img {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+}
+
 /** Table **/
 .table {
   width: 100%;
@@ -253,9 +272,11 @@ p {
   padding: 0.8rem 1.2rem;
   text-align: center;
 }
+
 .table tbody tr td:first-child {
   text-align: left;
 }
+
 .table tbody tr:nth-child(odd) {
   background: rgb(18, 18, 18);
 }
@@ -275,6 +296,7 @@ p {
   margin: 4rem auto;
   overflow: auto;
 }
+
 .footer,
 .footer a {
   color: #999;
@@ -294,6 +316,7 @@ p {
 .footer li {
   margin-bottom: 1.2rem;
 }
+/** ---- Utils ---- **/
 
 /** Container **/
 .container {
@@ -340,9 +363,11 @@ p {
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
   border-radius: 2px;
 }
+
 .btn:hover {
   opacity: 0.8;
 }
+
 .btn-rounded {
   border-radius: 5px;
 }
@@ -368,6 +393,11 @@ p {
   padding: 0.8rem 1.3rem;
   text-transform: uppercase;
 }
+
+/** ---- Responsiveness ---- **/
+
+/** Responsive for 1400px **/
+
 @media (max-width: 1400px) {
   #tab-2-content img {
     width: 85%;
@@ -377,17 +407,23 @@ p {
     font-size: 2rem;
     text-align: center;
     overflow: auto;
+    margin: 0 0 1.6rem;
   }
   #tab-2-content h2 {
     font-size: 1.2rem;
     text-align: center;
     overflow: auto;
+    margin: 0 0 1.8rem;
   }
   .text-lg {
     font-size: 1.5rem;
   }
+  .our-story-card-animation-2 {
+    padding: 17% 10%;
+  }
 }
 
+/** Responsive for 960px **/
 @media (max-width: 960px) {
   .showcase {
     height: 90vh;
@@ -440,6 +476,7 @@ p {
   }
 }
 
+/** Responsive for 700px **/
 @media (max-width: 700px) {
   .showcase::after {
     box-shadow: inset 50px 50px 150px #000, inset -25px -25px 150px #000;
@@ -454,24 +491,35 @@ p {
     display: block;
     text-align: center;
   }
+
   #tab-2-content .tab-2-content-middle {
     grid-template-columns: 1fr;
   }
+
   #tab-2-content .tab-2-content-bottom {
     grid-template-columns: 1fr;
     display: flex;
     flex-direction: column-reverse;
   }
+
+  .text-lg {
+    font-size: 1.2rem;
+  }
+
   #tab-2-content h1 {
     font-size: 1.5rem;
     text-align: center;
     overflow: auto;
+    margin: 0 0 1.4rem;
   }
+
   #tab-2-content h2 {
     font-size: 0.8rem;
     text-align: center;
     overflow: auto;
+    margin: 0 0 1.6rem;
   }
+
   #tab-2-content img {
     width: 80%;
     margin: auto;
@@ -481,7 +529,12 @@ p {
     max-width: 100%;
     padding: 0 0rem;
   }
+  .our-story-card-animation-2 {
+    padding: 15% 10%;
+  }
 }
+
+/** Responsive for 480px **/
 @media (max-width: 480px) {
   .table tbody tr td {
     font-size: 0.7rem;
@@ -503,6 +556,11 @@ p {
     margin: 1rem 2rem;
     line-height: 1;
   }
+
+  .text-lg {
+    font-size: 1rem;
+  }
+
   .tabs .container > div {
     /** For each div inside the class tab container **/
     padding: 0.4rem 0;
@@ -515,8 +573,13 @@ p {
   .table tbody tr td {
     padding: 0.6rem 1.1rem;
   }
+
+  .our-story-card-animation-2 {
+    padding: 16% 10%;
+  }
 }
 
+/** Responsive for 350px **/
 @media (max-width: 350px) {
   .table thead th {
     padding: 0.5rem;
@@ -524,5 +587,8 @@ p {
 
   .table tbody tr td {
     padding: 0.5rem 0.8rem;
+  }
+  .our-story-card-animation-2 {
+    padding: 15% 10%;
   }
 }
